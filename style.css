@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: #d0d1d3;
+    background: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1612463369_92-p-fon-sero-chernii-gradient-110.png') bottom no-repeat;
+    background-size: cover;
+    opacity: 0;
+    animation: ani 1.0s forwards;
+}
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+h1 {
+    color: #009B95;
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.news {
+    background-color: #f3f3f3;
+    padding: 50px 0 32px;
+    opacity: 0;
+    animation: ani 5.0s forwards;
+}
+
+article {
+    width: 768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+article a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #1f92aa;
+}
+
+article h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    color: rgb(74, 49, 216);
+    margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+footer .links {
+    margin-bottom: 50px;
+}
+
+footer .links >a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.copyright {
+    color: rgb(108, 117, 125);
+    font-family: 'Times New Roman', Times, serif;
+}
